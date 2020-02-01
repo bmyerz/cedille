@@ -155,7 +155,7 @@ one is trying to prove the natural-number induction principle for
 a specific number N; that is, for any predicate P on natural
 numbers, if the base and steps cases hold, then P holds for N.
 What would the proof look like for this?  One would assume predicate P,
-assume P 0 (base case) and ∀ n : Nat . P n ➔ P (S n) (step case), and prove P N by apply the
+assume P 0 (base case) and ∀ n : Nat . P n ➔ P (S n) (step case), and prove P N by applying the
 step case N times to the base case.  Leivant&rsquo;s remarkable observation is that
 this proof, seen through the lens of the Curry-Howard isomorphism, is
 </p>
@@ -176,7 +176,7 @@ of dependent intersection types is to allow us to define Nat as
 </p>
 <p>This definition seems to allow one to prove universality of predicates on cNats &ndash; not Nats!
 But universality of Nat-predicates turns out to follow from this, in several different ways.  
-See language-overview/induction-for-church-nats.ced for one example.
+See <code>language-overview/induction-for-church-nats.ced</code> for one example.
 </p>
 <a name="Primitive-equality-between-untyped-terms"></a>
 <h4 class="subsection">1.2.2 Primitive equality between untyped terms</h4>
@@ -218,7 +218,7 @@ in checking mode, then we rewrite the incoming (contextual) type
 to replace all subterms convertible with t1 with t2 (so we rewrite left
 to right).
 </p>
-<p>See language-overview/equational-reasoning.ced for examples.
+<p>See <code>language-overview/equational-reasoning.ced</code> for examples.
 </p>
 <a name="Implicit-products"></a>
 <h4 class="subsection">1.2.3 Implicit products</h4>
@@ -255,7 +255,7 @@ datatype notations.  One can declare datatypes using syntax similar to
 that of languages like Coq or Agda, and define functions using pattern
 matching and pattern-matching recursion.  Unlike Coq and Agda (as
 implemented at the time of writing), though, Cedille&rsquo;s datatype
-notations elaborate to Cedille Core (see See <a href="tooling.html#tooling">tooling</a>), which does
+notations elaborate to Cedille Core (see <a href="tooling.html#tooling">tooling</a>), which does
 not have any built-in notion of datatypes, only the pure type theory
 of CDLE.  One additional difference from the datatype notations of Coq
 and Agda is that Cedille&rsquo;s pattern-matching recursion supports
